@@ -1,12 +1,8 @@
 import { getSynonym } from "./getFromDb";
 import express, { Response } from "express";
 import { IReq } from "./Types/Request.d";
-import dotenv from "dotenv";
 import cors from "cors";
 import path from "path";
-
-// Add every environment variables from the ".env" file
-dotenv.config();
 
 const PORT = 4000;
 

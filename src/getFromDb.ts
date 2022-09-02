@@ -1,18 +1,9 @@
 import { MongoClient } from "mongodb";
 import { ISynonym } from "./Types/Synonym";
-import dotenv from "dotenv";
 import { scrape } from "./webScrapper";
 
-// Add every environment variables from the ".env" file
-dotenv.config();
-
-declare var process: {
-  env: {
-    MONGO_URI: string;
-  };
-};
-
-const { MONGO_URI } = process.env;
+const MONGO_URI =
+  "mongodb+srv://rootuser:rootpass@synonyms.txfqe01.mongodb.net/?retryWrites=true&w=majority";
 
 const getSearchType = (doSearchSynonym: boolean) =>
   doSearchSynonym ? "synonym" : "antonym";
