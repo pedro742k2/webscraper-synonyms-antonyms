@@ -12,3 +12,10 @@ The program firstly tries to find the definition on the database, if nothing can
 - Inside, execute `npm install` to install every dependency;
 - Then, run `npm run dev` and open the browser at `http://localhost:4000`;
 - This is it. Have fun *(if you can)*.
+
+## Technologies:
+
+- TypeScript
+- MongoDB
+- HTML
+- CSS
